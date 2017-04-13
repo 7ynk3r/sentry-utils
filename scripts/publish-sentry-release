@@ -136,13 +136,13 @@ create_release () {
   local CURRENT_PACKAGE_VERSION=$(get_package_version)
   echo "\nCurrent version: v$CURRENT_PACKAGE_VERSION"
 
-  echo "Bump version?"
-  select yn in "Yes" "No"; do
-    case $yn in
-      Yes ) bump_version; break;;
-      No ) break;;
-    esac
-  done
+  # echo "Bump version?"
+  # select yn in "Yes" "No"; do
+  #   case $yn in
+  #     Yes ) bump_version; break;;
+  #     No ) break;;
+  #   esac
+  # done
 
   local RELEASE_ID=$(get_package_version)
 
